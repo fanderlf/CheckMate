@@ -1,3 +1,7 @@
 This project will handle recurring checklists.
 
 It will also be my reference project to test different languages or frameworks
+
+Branches:
+- master: contains the latest stable version
+- development: used while developing features
