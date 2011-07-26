@@ -1,0 +1,43 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" x:Name="Screen_1_3_Name"
+	mc:Ignorable="d"
+	x:Class="CheckMateCorrectedScreens.Screen_1_3"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="66"/>
+			<RowDefinition/>
+			<RowDefinition Height="40"/>
+		</Grid.RowDefinitions>
+		<Button Content="Close" HorizontalAlignment="Right" Margin="0,8.536,8,8" Style="{DynamicResource Button-Sketch}" Width="75" Grid.Row="2" d:LayoutOverrides="Height">
+			
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="CheckMateCorrectedScreens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+			
+		</Button>
+		<Button Content="Finish" HorizontalAlignment="Right" Margin="0,8,8,8" Style="{DynamicResource Button-Sketch}" Width="75">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="CheckMateCorrectedScreens.Screen_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Previous^" HorizontalAlignment="Right" Margin="0,8,87,8" Style="{DynamicResource Button-Sketch}" Width="75">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="CheckMateCorrectedScreens.Screen_1_2"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<TextBlock HorizontalAlignment="Left" Margin="8,8,0,0" Grid.Row="1" Style="{DynamicResource BodyLeft-Sketch}" VerticalAlignment="Top"><Run Language="de-de" Text="Output File"/></TextBlock>
+		<TextBox Margin="8,31.756,40,0" Grid.Row="1" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Text="c:\project\NamingConvenvtions.cmc" VerticalAlignment="Top"/>
+		<Button Content="..." HorizontalAlignment="Right" Margin="0,31.756,8,0" Grid.Row="1" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Top" Width="28"/>
+	</Grid>
+</UserControl>
