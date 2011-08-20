@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMate.UI.Web", "CheckMate.UI.Web\CheckMate.UI.Web.csproj", "{74C39AEC-2EF4-4E86-879E-B2BC711D62CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMate.Tests", "CheckMate.Tests\CheckMate.Tests.csproj", "{EA9DAD09-6274-4A40-A5BE-8E5B8108F7DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMate.Contracts", "CheckMate.Contracts\CheckMate.Contracts.csproj", "{DC7BD457-60F9-495C-96BC-643B68E99CEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{74C39AEC-2EF4-4E86-879E-B2BC711D62CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74C39AEC-2EF4-4E86-879E-B2BC711D62CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74C39AEC-2EF4-4E86-879E-B2BC711D62CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9DAD09-6274-4A40-A5BE-8E5B8108F7DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9DAD09-6274-4A40-A5BE-8E5B8108F7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9DAD09-6274-4A40-A5BE-8E5B8108F7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9DAD09-6274-4A40-A5BE-8E5B8108F7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7BD457-60F9-495C-96BC-643B68E99CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7BD457-60F9-495C-96BC-643B68E99CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7BD457-60F9-495C-96BC-643B68E99CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7BD457-60F9-495C-96BC-643B68E99CEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

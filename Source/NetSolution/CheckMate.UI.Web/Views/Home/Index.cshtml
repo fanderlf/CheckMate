@@ -2,9 +2,10 @@
 
 @{
     ViewBag.Title = "title";
-    Layout = "_Layout";
+    Layout = "../Shared/_Layout.cshtml";
 }
 
 <h2>CheckMate</h2>
 
 This will be the start page
+@Html.RouteLink("Login",new {controller = "User", action = "Login"})
