@@ -1,0 +1,24 @@
+﻿@using CheckMate.UI.Web.Controllers
+@using CheckMate.UI.Web.Models
+@model UserLoginViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm())
+{ 
+<div class="loginbox">
+    <div>
+    <span>Username:</span>
+    @Html.TextBoxFor(x => x.Username, new { id = "username"})
+    </div>
+    <div>
+    <span>Password:</span>
+    @Html.TextBoxFor(x => x.Password, new { type = "password" , id = "password"})
+    </div>
+    <input type="submit" value="Login" id="login"/>
+</div>
+}
