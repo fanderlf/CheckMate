@@ -166,6 +166,10 @@
       <Project>{DC7BD457-60F9-495C-96BC-643B68E99CEA}</Project>
       <Name>CheckMate.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CheckMate.Services\CheckMate.Services.fsproj">
+      <Project>{7B94CC3F-D24F-426A-9FDE-C15DD831F703}</Project>
+      <Name>CheckMate.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\User\Home.cshtml" />

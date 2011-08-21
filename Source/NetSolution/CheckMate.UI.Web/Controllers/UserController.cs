@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using CheckMate.Contracts.Services;
+using CheckMate.Services.Implementations;
 using CheckMate.UI.Web.Fakes;
 using CheckMate.UI.Web.Models;
 
@@ -20,7 +21,7 @@ namespace CheckMate.UI.Web.Controllers
         }
 
         public UserController()
-            :this(new FakeUserService())
+            :this(new UserService())
         {
             
         }

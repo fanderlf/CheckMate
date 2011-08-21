@@ -1,9 +1,11 @@
-﻿
-module UserService
+﻿namespace CheckMate.Services.Implementations
 
-type UserService =
-    member x.Login username password =
-        true
+open CheckMate.Contracts.Services
+
+type UserService() =
+    interface IUserService with 
+        member x.Login(username,password) =
+            true
 
 
 
