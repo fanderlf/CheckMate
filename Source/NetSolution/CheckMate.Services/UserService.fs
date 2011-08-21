@@ -2,7 +2,7 @@
 module UserService
 
 type UserService =
-    member x.Login() =
+    member x.Login username password =
         true
 
 
