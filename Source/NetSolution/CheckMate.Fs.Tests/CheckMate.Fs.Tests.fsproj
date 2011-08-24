@@ -49,8 +49,20 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.fs" />
+    <Compile Include="UserServiceSpecs.fs" />
     <None Include="Script.fsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CheckMate.Contracts\CheckMate.Contracts.csproj">
+      <Name>CheckMate.Contracts</Name>
+      <Project>{dc7bd457-60f9-495c-96bc-643b68e99cea}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\CheckMate.Services\CheckMate.Services.fsproj">
+      <Name>CheckMate.Services</Name>
+      <Project>{7b94cc3f-d24f-426a-9fde-c15dd831f703}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />

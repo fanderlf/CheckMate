@@ -5,7 +5,4 @@ open CheckMate.Contracts.Services
 type UserService() =
     interface IUserService with 
         member x.Login(username,password) =
-            true
-
-
-
+            username = "florian" && password = "1234"
