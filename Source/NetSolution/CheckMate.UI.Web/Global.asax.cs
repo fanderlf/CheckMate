@@ -8,6 +8,7 @@ using CheckMate.Services.Implementations;
 using CheckMate.UI.Web.Services;
 using LightCore;
 using LightCore.Integration.Web.Mvc;
+using Raven.Client.Document;
 
 namespace CheckMate
 {

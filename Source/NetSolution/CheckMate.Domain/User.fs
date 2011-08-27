@@ -1,6 +1,7 @@
 ﻿module CheckMate.Domain
 
 type User = {
+  Id: string;
   Username: string;
   PasswordHash: string;
 }

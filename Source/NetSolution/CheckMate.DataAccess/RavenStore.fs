@@ -2,10 +2,8 @@
 
 open Raven.Client.Document
 
-let store = new DocumentStore()
-
-let initStore =
-    store.Url <- "http://localhost:8080"
-    store.Initialize
-
+//let initStore() =
+//    let store = new DocumentStore()
+//    store.Url <- "http://localhost:8080"
+//    store.Initialize()
 

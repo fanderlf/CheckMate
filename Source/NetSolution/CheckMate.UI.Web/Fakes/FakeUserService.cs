@@ -11,5 +11,10 @@ namespace CheckMate.UI.Web.Fakes
 
             return false;
         }
+
+        public void CreateUser(string username, string password)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
