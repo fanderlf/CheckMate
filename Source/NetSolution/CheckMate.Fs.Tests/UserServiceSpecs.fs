@@ -4,8 +4,9 @@ module UserServiceSpecs
 
 open NaturalSpec
 open CheckMate.Services
-open CheckMate.Contracts.Services
+//open CheckMate.Contracts.Services
 open CheckMate.Services.Implementations
+
 
 let userService = new UserService()
 

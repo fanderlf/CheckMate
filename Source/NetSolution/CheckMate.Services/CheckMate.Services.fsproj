@@ -34,18 +34,30 @@
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core" />
+    <Reference Include="Raven.Client.Lightweight">
+      <HintPath>..\packages\RavenDB.1.0.0.427\lib\net40\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UserService.fs" />
-    <None Include="Script.fsx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CheckMate.Contracts\CheckMate.Contracts.csproj">
-      <Name>CheckMate.Contracts</Name>
-      <Project>{dc7bd457-60f9-495c-96bc-643b68e99cea}</Project>
+    <ProjectReference Include="..\CheckMate.DataAccess\CheckMate.DataAccess.fsproj">
+      <Name>CheckMate.DataAccess</Name>
+      <Project>{ff748587-dcd8-4fa6-803c-d4c36861c688}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\CheckMate.Domain\CheckMate.Domain.fsproj">
+      <Name>CheckMate.Domain</Name>
+      <Project>{88e90bf9-bdb9-46f0-ba4f-91fda03c0c8d}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\CheckMate.UI.Web\CheckMate.UI.Web.csproj">
+      <Name>CheckMate.UI.Web</Name>
+      <Project>{74c39aec-2ef4-4e86-879e-b2bc711d62ce}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

@@ -52,6 +52,7 @@
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\LightCore.1.4.1\lib\NET40\Microsoft.Practices.ServiceLocation.dll</HintPath>
     </Reference>
+    <Reference Include="Raven.Client.Lightweight, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -86,6 +87,7 @@
     <Compile Include="Models\UserHomeViewModel.cs" />
     <Compile Include="Models\UserLoginViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IUserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -162,9 +164,9 @@
     <Content Include="Views\User\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CheckMate.Contracts\CheckMate.Contracts.csproj">
-      <Project>{DC7BD457-60F9-495C-96BC-643B68E99CEA}</Project>
-      <Name>CheckMate.Contracts</Name>
+    <ProjectReference Include="..\CheckMate.DataAccess\CheckMate.DataAccess.fsproj">
+      <Project>{FF748587-DCD8-4FA6-803C-D4C36861C688}</Project>
+      <Name>CheckMate.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\CheckMate.Services\CheckMate.Services.fsproj">
       <Project>{7B94CC3F-D24F-426A-9FDE-C15DD831F703}</Project>

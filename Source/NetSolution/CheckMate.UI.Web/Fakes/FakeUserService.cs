@@ -1,4 +1,4 @@
-﻿using CheckMate.Contracts.Services;
+﻿using CheckMate.UI.Web.Services;
 
 namespace CheckMate.UI.Web.Fakes
 {
@@ -10,6 +10,11 @@ namespace CheckMate.UI.Web.Fakes
                 return true;
 
             return false;
+        }
+
+        public void CreateUser(string username, string password)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

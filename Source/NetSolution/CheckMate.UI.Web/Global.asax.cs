@@ -4,6 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using CheckMate.Services.Implementations;
+using CheckMate.UI.Web.Services;
+using LightCore;
+using LightCore.Integration.Web.Mvc;
+using Raven.Client.Document;
 
 namespace CheckMate
 {
@@ -32,6 +37,11 @@ namespace CheckMate
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
+            var builder = new ContainerBuilder();
+            builder.Register<IUserService>(c => new UserService());
+
+            ControllerBuilder.Current.SetControllerFactory(new ControllerFactory(builder.Build()));
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);

@@ -1,4 +1,19 @@
-﻿// Learn more about F# at http://fsharp.net
+﻿module CheckMate.DataAccess.User
 
-module Module1
+open CheckMate.Domain
+open Raven.Client
+open Raven.Client.Document
 
+
+let store = new DocumentStore()
+store.Url <- "http://localhost:8080"
+store.Initialize() 
+
+let session = store.OpenSession()
+
+let GetUserByUsername username =
+    session.Load "users/1025"
+
+let SaveUser user =
+    session.Store user
+    session.SaveChanges()
