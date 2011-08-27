@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
+using CheckMate.Services.Implementations;
 using CheckMate.UI.Web.Controllers;
 using CheckMate.UI.Web.Models;
-using CheckMate.UI.Web.Services;
 using Machine.Fakes;
 using Machine.Specifications;
 

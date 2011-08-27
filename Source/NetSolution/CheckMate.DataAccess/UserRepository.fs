@@ -12,7 +12,7 @@ store.Initialize()
 let session = store.OpenSession()
 
 let GetUserByUsername username =
-    session.Load "users/1025"
+    session.Load "users/1"
 
 let SaveUser user =
     session.Store user

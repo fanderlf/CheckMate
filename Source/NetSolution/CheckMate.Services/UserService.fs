@@ -3,12 +3,14 @@
 open CheckMate.Domain
 open CheckMate.DataAccess.User
 open CheckMate.DataAccess.RavenStore
-open CheckMate.UI.Web.Services
-open Raven.Client
+
+type IUserService =
+    abstract member Login: string -> string -> bool
+    abstract member CreateUser: string -> string -> unit
 
 type UserService()=
     interface IUserService with 
-        member x.Login(username,password) =
+        member x.Login username password =
             GetUserByUsername(username) |> MatchPassword password
-        member x.CreateUser(username,password) =
+        member x.CreateUser username password  =
             SaveUser {Id = null;Username = username; PasswordHash = HashPassword password}

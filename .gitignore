@@ -5,5 +5,5 @@ _ReSharper.*/
 *.ReSharper.user
 *.suo
 *~
-RavenDB.*/server/Data/
-RavenDB.*/server/logs/
+RavenDB.1.0.0.427/server/Data/
+RavenDB.1.0.0.427/server/Logs/

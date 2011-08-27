@@ -55,11 +55,6 @@
       <Project>{88e90bf9-bdb9-46f0-ba4f-91fda03c0c8d}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\CheckMate.UI.Web\CheckMate.UI.Web.csproj">
-      <Name>CheckMate.UI.Web</Name>
-      <Project>{74c39aec-2ef4-4e86-879e-b2bc711d62ce}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
