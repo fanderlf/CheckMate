@@ -2,9 +2,7 @@
 
 open CheckMate.Contracts.Services
 
-type UserService(canLoginUser) =
-    let canLoginUser = canLoginUser
-
+type UserService() =
     interface IUserService with 
         member x.Login(username,password) =
-            canLoginUser username password
+            username = "florian" && password = "1234"
