@@ -1,4 +1,8 @@
-﻿// Learn more about F# at http://fsharp.net
+﻿module CheckMate.DataAccess.User
 
-module Module1
+open CheckMate.Domain
+open Raven.Client.Document
 
+let GetUserByUsername username =
+    {Username= "florian"; PasswordHash= "1234"}
+    

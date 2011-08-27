@@ -106,10 +106,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CheckMate.Contracts\CheckMate.Contracts.csproj">
-      <Project>{DC7BD457-60F9-495C-96BC-643B68E99CEA}</Project>
-      <Name>CheckMate.Contracts</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CheckMate.UI.Web\CheckMate.UI.Web.csproj">
       <Project>{74C39AEC-2EF4-4E86-879E-B2BC711D62CE}</Project>
       <Name>CheckMate.UI.Web</Name>

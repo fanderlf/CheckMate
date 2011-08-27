@@ -4,10 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using CheckMate.Contracts.Services;
-using CheckMate.Services.Implementations;
 using CheckMate.UI.Web.Fakes;
 using CheckMate.UI.Web.Models;
+using CheckMate.UI.Web.Services;
 
 namespace CheckMate.UI.Web.Controllers
 {
@@ -18,12 +17,6 @@ namespace CheckMate.UI.Web.Controllers
         public UserController(IUserService userService)
         {
             _userService = userService;
-        }
-
-        public UserController()
-            :this(new UserService())
-        {
-            
         }
 
         public ActionResult Login()

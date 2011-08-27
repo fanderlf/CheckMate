@@ -5,13 +5,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMate.UI.Web", "CheckMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMate.Tests", "CheckMate.Tests\CheckMate.Tests.csproj", "{EA9DAD09-6274-4A40-A5BE-8E5B8108F7DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckMate.Contracts", "CheckMate.Contracts\CheckMate.Contracts.csproj", "{DC7BD457-60F9-495C-96BC-643B68E99CEA}"
-EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CheckMate.Services", "CheckMate.Services\CheckMate.Services.fsproj", "{7B94CC3F-D24F-426A-9FDE-C15DD831F703}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CheckMate.DataAccess", "CheckMate.DataAccess\CheckMate.DataAccess.fsproj", "{FF748587-DCD8-4FA6-803C-D4C36861C688}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CheckMate.Fs.Tests", "CheckMate.Fs.Tests\CheckMate.Fs.Tests.fsproj", "{438E5806-520E-4DE7-983F-F4AB3299AAC5}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CheckMate.Domain", "CheckMate.Domain\CheckMate.Domain.fsproj", "{88E90BF9-BDB9-46F0-BA4F-91FDA03C0C8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +27,6 @@ Global
 		{EA9DAD09-6274-4A40-A5BE-8E5B8108F7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA9DAD09-6274-4A40-A5BE-8E5B8108F7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA9DAD09-6274-4A40-A5BE-8E5B8108F7DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC7BD457-60F9-495C-96BC-643B68E99CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC7BD457-60F9-495C-96BC-643B68E99CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC7BD457-60F9-495C-96BC-643B68E99CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC7BD457-60F9-495C-96BC-643B68E99CEA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7B94CC3F-D24F-426A-9FDE-C15DD831F703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B94CC3F-D24F-426A-9FDE-C15DD831F703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B94CC3F-D24F-426A-9FDE-C15DD831F703}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,6 +39,10 @@ Global
 		{438E5806-520E-4DE7-983F-F4AB3299AAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{438E5806-520E-4DE7-983F-F4AB3299AAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{438E5806-520E-4DE7-983F-F4AB3299AAC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E90BF9-BDB9-46F0-BA4F-91FDA03C0C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E90BF9-BDB9-46F0-BA4F-91FDA03C0C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E90BF9-BDB9-46F0-BA4F-91FDA03C0C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E90BF9-BDB9-46F0-BA4F-91FDA03C0C8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

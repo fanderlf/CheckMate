@@ -1,4 +1,4 @@
-﻿using CheckMate.Contracts.Services;
+﻿using CheckMate.UI.Web.Services;
 
 namespace CheckMate.UI.Web.Fakes
 {

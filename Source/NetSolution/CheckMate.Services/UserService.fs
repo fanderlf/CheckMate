@@ -1,10 +1,10 @@
 ﻿namespace CheckMate.Services.Implementations
 
-open CheckMate.Contracts.Services
+open CheckMate.Domain
+open CheckMate.DataAccess.User
+open  CheckMate.UI.Web.Services
 
-type UserService(canLoginUser) =
-    let canLoginUser = canLoginUser
-
+type UserService() =
     interface IUserService with 
         member x.Login(username,password) =
-            canLoginUser username password
+            GetUserByUsername(username) |> MatchPassword password
