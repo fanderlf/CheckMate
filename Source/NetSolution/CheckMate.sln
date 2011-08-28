@@ -13,7 +13,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CheckMate.Fs.Tests", "Check
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CheckMate.Domain", "CheckMate.Domain\CheckMate.Domain.fsproj", "{88E90BF9-BDB9-46F0-BA4F-91FDA03C0C8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RavenDbTest", "RavenDbTest\RavenDbTest.csproj", "{84B3F534-CE4C-4067-9C53-E95A872182F7}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CheckMate.Infrastructure", "CheckMate.Infrastructure\CheckMate.Infrastructure.fsproj", "{1C629ECD-039E-4614-A68B-C95F418B4858}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,16 +85,16 @@ Global
 		{88E90BF9-BDB9-46F0-BA4F-91FDA03C0C8D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{88E90BF9-BDB9-46F0-BA4F-91FDA03C0C8D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{88E90BF9-BDB9-46F0-BA4F-91FDA03C0C8D}.Release|x86.ActiveCfg = Release|Any CPU
-		{84B3F534-CE4C-4067-9C53-E95A872182F7}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{84B3F534-CE4C-4067-9C53-E95A872182F7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{84B3F534-CE4C-4067-9C53-E95A872182F7}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{84B3F534-CE4C-4067-9C53-E95A872182F7}.Debug|x86.ActiveCfg = Debug|x86
-		{84B3F534-CE4C-4067-9C53-E95A872182F7}.Debug|x86.Build.0 = Debug|x86
-		{84B3F534-CE4C-4067-9C53-E95A872182F7}.Release|Any CPU.ActiveCfg = Release|x86
-		{84B3F534-CE4C-4067-9C53-E95A872182F7}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{84B3F534-CE4C-4067-9C53-E95A872182F7}.Release|Mixed Platforms.Build.0 = Release|x86
-		{84B3F534-CE4C-4067-9C53-E95A872182F7}.Release|x86.ActiveCfg = Release|x86
-		{84B3F534-CE4C-4067-9C53-E95A872182F7}.Release|x86.Build.0 = Release|x86
+		{1C629ECD-039E-4614-A68B-C95F418B4858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C629ECD-039E-4614-A68B-C95F418B4858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C629ECD-039E-4614-A68B-C95F418B4858}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1C629ECD-039E-4614-A68B-C95F418B4858}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1C629ECD-039E-4614-A68B-C95F418B4858}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C629ECD-039E-4614-A68B-C95F418B4858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C629ECD-039E-4614-A68B-C95F418B4858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C629ECD-039E-4614-A68B-C95F418B4858}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1C629ECD-039E-4614-A68B-C95F418B4858}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1C629ECD-039E-4614-A68B-C95F418B4858}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
