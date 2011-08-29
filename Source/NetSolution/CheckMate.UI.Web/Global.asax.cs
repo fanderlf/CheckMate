@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using CheckMate.Infrastructure.Bootstrapper;
 using CheckMate.Services.Implementations;
+using CheckMate.UI.Web.Controllers;
 using LightCore;
 using LightCore.Integration.Web.Mvc;
 
@@ -37,9 +42,18 @@ namespace CheckMate
             AreaRegistration.RegisterAllAreas();
 
             var builder = new ContainerBuilder();
-            builder.Register<IUserService>(c => new UserService());
+            var bootstrapper = new Bootstrapper(builder);
 
-            ControllerBuilder.Current.SetControllerFactory(new ControllerFactory(builder.Build()));
+            var rootPath = new FileInfo(Server.MapPath("Global.asax")).Directory.FullName;
+            var binaryPath = Path.Combine(rootPath, "bin");
+
+            //bootstrapper.ExecuteBootstrapperTasks(Path.Combine(binaryPath,"CheckMate.Services.dll"));
+            bootstrapper.ExecuteBootstrapperTasks(Path.Combine(binaryPath,"CheckMate.UI.Web.dll"));
+
+            IContainer container = builder.Build();
+            var userService = container.Resolve<IUserService>();
+            ControllerBuilder.Current.SetControllerFactory(new ControllerFactory(container));
+
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);

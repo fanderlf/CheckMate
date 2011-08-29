@@ -32,6 +32,9 @@
     <DocumentationFile>bin\Release\CheckMate.Services.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LightCore">
+      <HintPath>..\packages\LightCore.1.4.1\lib\NET40\LightCore.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core" />
     <Reference Include="Raven.Client.Lightweight">
@@ -43,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UserService.fs" />
+    <Compile Include="ServicesBootstrapperTask.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CheckMate.DataAccess\CheckMate.DataAccess.fsproj">
@@ -53,6 +57,11 @@
     <ProjectReference Include="..\CheckMate.Domain\CheckMate.Domain.fsproj">
       <Name>CheckMate.Domain</Name>
       <Project>{88e90bf9-bdb9-46f0-ba4f-91fda03c0c8d}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\CheckMate.Infrastructure\CheckMate.Infrastructure.fsproj">
+      <Name>CheckMate.Infrastructure</Name>
+      <Project>{1c629ecd-039e-4614-a68b-c95f418b4858}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

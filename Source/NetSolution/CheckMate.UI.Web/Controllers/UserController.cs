@@ -21,7 +21,7 @@ namespace CheckMate.UI.Web.Controllers
 
         public ActionResult Login()
         {
-           _userService.CreateUser("florian","1234");
+           //_userService.CreateUser("florian","1234");
             return View(new UserLoginViewModel());
         }
 

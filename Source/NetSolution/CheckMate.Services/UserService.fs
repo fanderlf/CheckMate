@@ -11,6 +11,7 @@ type IUserService =
 type UserService()=
     interface IUserService with 
         member x.Login username password =
-            GetUserByUsername(username) |> MatchPassword password
+            //GetUserByUsername(username) |> MatchPassword password
+            username = "florian" && password = "12"
         member x.CreateUser username password  =
             SaveUser {Id = null;Username = username; PasswordHash = HashPassword password}
