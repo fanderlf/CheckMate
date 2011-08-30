@@ -9,7 +9,7 @@ namespace CheckMate.UI.Web.Bootstrapper
     {
         public void Execute(IContainerBuilder containerBuilder)
         {
-            containerBuilder.Register<IUserService, UserService>();
+            //containerBuilder.Register<IUserService, UserService>();
         }
     }
 }

@@ -48,7 +48,9 @@ namespace CheckMate
             var binaryPath = Path.Combine(rootPath, "bin");
 
             //bootstrapper.ExecuteBootstrapperTasks(Path.Combine(binaryPath,"CheckMate.Services.dll"));
-            bootstrapper.ExecuteBootstrapperTasks(Path.Combine(binaryPath,"CheckMate.UI.Web.dll"));
+            var assemblyNames = Assembly.GetAssembly(typeof (HomeController)).GetReferencedAssemblies();
+            foreach (var assemblyName in assemblyNames)
+                bootstrapper.ExecuteBootstrapperTasks(Assembly.Load(assemblyName));
 
             IContainer container = builder.Build();
             var userService = container.Resolve<IUserService>();

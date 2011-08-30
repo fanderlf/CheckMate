@@ -9,8 +9,7 @@ type IBootstrapperTask =
 
 type Bootstrapper(containerBuilder:IContainerBuilder) =
     let containerBuilder = containerBuilder
-    member x.ExecuteBootstrapperTasks assemblyName =
-        let assembly = Assembly.LoadFile assemblyName
+    member x.ExecuteBootstrapperTasks (assembly:Assembly) =
         assembly.GetTypes() 
             |> Seq.filter (fun t -> t.GetInterface("IBootstrapperTask") <> null)
             |> Seq.map (fun t ->  Activator.CreateInstance(t) :?> IBootstrapperTask) 
