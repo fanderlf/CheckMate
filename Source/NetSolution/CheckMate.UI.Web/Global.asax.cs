@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using CheckMate.Infrastructure.Bootstrapper;
+using CheckMate.Services;
 using CheckMate.Services.Implementations;
 using CheckMate.UI.Web.Controllers;
 using LightCore;
@@ -42,18 +43,11 @@ namespace CheckMate
             AreaRegistration.RegisterAllAreas();
 
             var builder = new ContainerBuilder();
-            var bootstrapper = new Bootstrapper(builder);
 
-            var rootPath = new FileInfo(Server.MapPath("Global.asax")).Directory.FullName;
-            var binaryPath = Path.Combine(rootPath, "bin");
-
-            //bootstrapper.ExecuteBootstrapperTasks(Path.Combine(binaryPath,"CheckMate.Services.dll"));
-            var assemblyNames = Assembly.GetAssembly(typeof (HomeController)).GetReferencedAssemblies();
-            foreach (var assemblyName in assemblyNames)
-                bootstrapper.ExecuteBootstrapperTasks(Assembly.Load(assemblyName));
+            var servicesBootstrapperTask = new ServicesBootstrapperTask();
+            ((IBootstrapperTask)servicesBootstrapperTask).Execute(builder);
 
             IContainer container = builder.Build();
-            var userService = container.Resolve<IUserService>();
             ControllerBuilder.Current.SetControllerFactory(new ControllerFactory(container));
 
 
